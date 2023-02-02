@@ -1,0 +1,49 @@
+<div class="input-form">
+    <h1 class="title">ADD PRE-SELECTION</h1>
+    <div class="content">
+        <div class="group">
+            <span>Tool:</span>
+            <select v-model="form.tool" @click="handleInputTool">
+                <option :value="form.tool" selected disabled hidden>
+                    {{ form.tool }}
+                </option>
+                <option v-for="option in toolOptions" :value="option">
+                    {{ option }}
+                </option>
+            </select>
+        </div>
+        <div class="group">
+            <span>Chart Name:</span>
+            <select v-model="form.chartName" @click="handleInputChartName">
+                <option :value="form.chartName" selected disabled hidden>
+                    {{ form.chartName }}
+                </option>
+                <option v-for="option in chartNameOptions" :value="option">
+                    {{ option }}
+                </option>
+            </select>
+        </div>
+        <div class="group">
+            <span>Start Date:</span>
+            <input type="date" v-model="form.startDate">
+        </div>
+        <div class="group">
+            <span>End Date:</span>
+            <input type="date" v-model="form.endDate">
+        </div>
+        <div class="group">
+            <span>Chamber:</span>
+            <div class="checkbox-aria">
+                <div class="checkbox">
+                    <input id="checkbox-all" type="checkbox" v-model="isCheckAll" @click="checkAll">
+                    <label for="checkbox-all">all</label>
+                </div>
+                <div class="checkbox" v-for="item in checkboxOptions">
+                    <input :id="item" type="checkbox" :value="item" v-model="selectedCheckbox" @change="updateCheckall">
+                    <label :for="item">{{ item }}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button @click="handlePreSearch">+</button>
+</div>

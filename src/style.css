@@ -1,0 +1,221 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import "sweetalert2/dist/sweetalert2.min.css";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#app {
+  position: relative;
+  font-family: "Noto Sans TC", sans-serif;
+}
+#app a {
+  text-decoration: none;
+}
+#app .loding-text {
+  font-family: "Silkscreen", cursive;
+}
+
+#select-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  background-color: #ffffff;
+}
+#select-section a {
+  padding: 0 5px;
+  color: #0c2461;
+  transition: 0.3s;
+  font-family: "Silkscreen", cursive;
+}
+#select-section a:hover {
+  color: #f9ca24;
+}
+
+#section4, #section3, #section2, #section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+#section4 .input-form, #section2 .input-form, #section1 .input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section4 .switch-btn, #section2 .switch-btn {
+  position: absolute;
+  opacity: 0;
+  z-index: -2;
+}
+#section4 .menu-btn, #section2 .menu-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 15px;
+  color: #0c2461;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 3;
+}
+#section4 .menu-btn:hover, #section2 .menu-btn:hover {
+  color: #f9ca24;
+}
+
+#section1 {
+  height: 80vh;
+  background-color: #f1f2f6;
+}
+#section1 .input-form {
+  height: 90%;
+  width: 23%;
+  margin: auto;
+}
+#section1 .table {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 72%;
+  margin: auto;
+  background-color: #0c2461;
+  border-radius: 8px;
+}
+#section1 .table .loding-text {
+  color: #f9ca24;
+}
+
+#section2 {
+  position: relative;
+  height: 70vh;
+  background-color: #ffffff;
+}
+#section2 .input-form {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  height: 80%;
+  width: 25%;
+  z-index: 3;
+  transition: 0.3s;
+  transform: translateX(100%);
+}
+#section2 #basic-switch-btn:checked + .input-form {
+  top: 50px;
+  right: 15px;
+  transform: translateX(0);
+}
+#section2 .loding-text {
+  color: #0c2461;
+}
+
+#section3 {
+  height: 80vh;
+  background-color: #f1f2f6;
+}
+#section3 .input-form {
+  height: 90%;
+  width: 23%;
+  margin: auto;
+}
+#section3 .table {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 72%;
+  margin: auto;
+  background-color: #f9ca24;
+  border-radius: 8px;
+}
+#section3 .table .loding-text {
+  color: #0c2461;
+}
+
+#section4 {
+  position: relative;
+  height: 70vh;
+  background-color: #ffffff;
+}
+#section4 .input-form {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  height: 80%;
+  width: 25%;
+  z-index: 3;
+  transition: 0.3s;
+  transform: translateX(100%);
+}
+#section4 #advanced-switch-btn:checked + .input-form {
+  top: 50px;
+  right: 15px;
+  transform: translateX(0);
+}
+#section4 .loding-text {
+  color: #0c2461;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #0c2461;
+  background-color: #f1f2f6;
+}
+
+.colored-toast.swal2-icon-success {
+  background-color: #a5dc86 !important;
+}
+
+.colored-toast.swal2-icon-error {
+  background-color: #f27474 !important;
+}
+
+.colored-toast.swal2-icon-warning {
+  background-color: #f8bb86 !important;
+}
+
+.colored-toast.swal2-icon-info {
+  background-color: #3fc3ee !important;
+}
+
+.colored-toast.swal2-icon-question {
+  background-color: #87adbd !important;
+}
+
+.colored-toast .swal2-title {
+  color: white;
+}
+
+.colored-toast .swal2-close {
+  color: white;
+}
+
+.colored-toast .swal2-html-container {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

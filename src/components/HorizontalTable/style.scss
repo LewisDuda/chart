@@ -1,0 +1,102 @@
+.table-title {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #f9ca24;
+    padding: 2px 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #f9ca24;
+}
+
+.wrap {
+    height: 90%;
+    width: 90%;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+        height: 75%;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 3px;
+            height: 5px;
+            border-radius: 8px;
+            background-color: #3f5897;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background: #55efc4;
+        }
+
+        table {
+            height: 97%;
+            width: max-content;
+
+            .head-col {
+                position: sticky;
+                left: 0;
+                width: max-content;
+                padding: 0 5px;
+                font-size: 12px;
+                font-weight: 700;
+                color: #0c2461;
+                background-color: #f9ca24;
+            }
+
+            .col {
+                text-align: center;
+                width: 68px;
+                min-width: 68px;
+                font-size: 12px;
+                font-weight: 500;
+                color: #0c2461;
+                background-color: #dff9fb;
+            }
+
+            .col.del {
+                color: #d63031;
+                cursor: pointer;
+                font-size: 12px;
+            }
+
+            input {
+                width: 100%;
+                height: 100%;
+                border: none;
+                font-size: 12px;
+                text-align: center;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+
+.download-btn {
+    position: absolute;
+    bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 5px;
+    font-family: "Silkscreen", cursive;
+    font-size: 12px;
+    font-weight: 900;
+    color: #0c2461;
+    background-color: #f9ca24;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        color: #0c2461;
+        background-color: #dff9fb;
+    }
+}

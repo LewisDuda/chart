@@ -1,0 +1,40 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+
+    .tab-button {
+        height: 35px;
+        width: 25%;
+        font-size: 6px;
+        font-weight: 100;
+        font-family: 'Silkscreen', cursive;
+        white-space: pre-wrap;
+        text-align: center;
+        background-color: #3f5897;
+        border: none;
+        color: #f9ca24;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            color: #0c2461;
+            background-color: #f9ca24;
+        }
+
+        &.active {
+            color: #f9ca24;
+            background-color: #0c2461;
+        }
+
+        &:first-child {
+            border-radius: 8px 0 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 8px 0 0;
+        }
+    }
+}

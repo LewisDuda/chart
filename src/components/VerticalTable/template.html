@@ -1,0 +1,28 @@
+<h1 class="table-title">PRE-SELECTION TABLE</h1>
+<div class="wrap">
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Tool</th>
+                    <th scope="col">ChartName</th>
+                    <th scope="col">StartDate</th>
+                    <th scope="col">EndDate</th>
+                    <th scope="col">Chamber</th>
+                    <th scope="col" @click="deleteAllAdvancedSelected">X</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(item, key) in advancedSelected">
+                    <td>{{ item.tool }}</td>
+                    <td>{{ item.chartName }}</td>
+                    <td>{{ item.startDate }}</td>
+                    <td>{{ item.endDate }}</td>
+                    <td>{{ item.showChamber }}</td>
+                    <td @click="deleteAdvancedSelected(key)">X</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<button class="search-btn" @click="search"><i class="fa-solid fa-magnifying-glass"></i></button>

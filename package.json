@@ -1,0 +1,27 @@
+{
+  "name": "chart",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "node": "json-server --watch db.json --port 8888",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chart.js": "^3.9.1",
+    "json-server": "^0.17.0",
+    "sweetalert2": "^11.4.29",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.6",
+    "vuex": "^4.0.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.3",
+    "sass": "^1.54.5",
+    "vite": "^3.0.7"
+  }
+}

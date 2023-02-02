@@ -1,0 +1,120 @@
+.input-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #0c2461;
+  color: #f9ca24;
+}
+.input-form .title {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f9ca24;
+  font-size: 17px;
+  font-family: "Silkscreen", cursive;
+}
+.input-form .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin-top: 20px;
+}
+.input-form .content .group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.input-form .content .group span {
+  width: 100%;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.input-form .content .group select {
+  width: 100%;
+  font-size: 12px;
+  padding: 5px 3px;
+  border: 1px solid #0c2461;
+  background-color: white;
+  border-radius: 3px;
+  color: #0c2461;
+  cursor: pointer;
+}
+.input-form .content .group select:focus {
+  outline: none;
+}
+.input-form .content .group input:focus {
+  outline: none;
+}
+.input-form .content .group:nth-child(3), .input-form .content .group:nth-child(4) {
+  width: 50%;
+}
+.input-form .content .group:nth-child(3) input[type=date], .input-form .content .group:nth-child(4) input[type=date] {
+  height: 15px;
+  width: 90%;
+  font-size: 12px;
+  padding: 3px;
+}
+.input-form .content .group:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+}
+.input-form .content .group:nth-child(5) span {
+  width: 30%;
+}
+.input-form .content .group:nth-child(5) .checkbox-aria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 70%;
+}
+.input-form .content .group:nth-child(5) .checkbox-aria .checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: 30px;
+  height: 25px;
+}
+.input-form .content .group:nth-child(5) .checkbox-aria .checkbox input[type=checkbox] {
+  margin-right: 2px;
+  cursor: pointer;
+}
+.input-form .content .group:nth-child(5) .checkbox-aria .checkbox label {
+  font-size: 12px;
+  color: #f9ca24;
+  cursor: pointer;
+}
+.input-form button {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 50px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #0c2461;
+  background-color: #f9ca24;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.input-form button:hover {
+  color: #0c2461;
+  background-color: #fae598;
+}/*# sourceMappingURL=style.css.map */

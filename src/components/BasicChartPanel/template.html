@@ -1,0 +1,8 @@
+<div class="tabs">
+    <button v-for="tab in tabs" :key="tab" :class="['tab-button', { active: activeTab === tab }]"
+        @click="activeTab = tab">
+        {{ tab }}
+    </button>
+</div>
+
+<component :is="currentTabComponent"></component>

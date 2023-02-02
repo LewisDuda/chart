@@ -1,0 +1,44 @@
+<h1 class="table-title">{{ chartTitle }}</h1>
+<div class="wrap">
+    <div class="container">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="head-col"> {{ tableDates[0].type }} </td>
+                    <td v-for="item in tableDates" class="col" :colspan="item.count">
+                        {{ item.unit }}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="head-col">{{ processItems[0].col2 }}</td>
+                    <td v-for="item in processItems" class="col">
+                        <input v-if="item.isChamberEdit" type="text" v-focus v-model="edit"
+                            @keyup.enter="submitEditChamber(item)" @blur="cancelEditChamber(item)"
+                            @keyup.esc="cancelEditChamber(item)" />
+                        <span v-else @dblclick="handleEditChamber(item)">
+                            {{ item.col2Value }}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="head-col">Value</td>
+                    <td v-for="item in processItems" class="col">
+                        <input v-if="item.isValueEdit" type="text" v-focus v-model="edit"
+                            @keyup.enter="submitEditValue(item)" @blur="cancelEditValue(item)"
+                            @keyup.esc="cancelEditValue(item)" />
+                        <span v-else @dblclick="handleEditValue(item)">
+                            {{ item.value }}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="head-col del">Delete</td>
+                    <td v-for="item in items" class="col del" @click="handleDelete(item)">
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<button class="download-btn" @click="download">Download</button>

@@ -1,0 +1,207 @@
+{
+  "chart": [
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-08",
+      "timestamp": 1662595200000,
+      "chamber": "#1",
+      "sortChamber": 1,
+      "value": 15,
+      "id": 1
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-08",
+      "timestamp": 1662595200000,
+      "chamber": "#2",
+      "sortChamber": 2,
+      "value": 23.3,
+      "id": 2
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-08",
+      "timestamp": 1662595200000,
+      "chamber": "#3",
+      "sortChamber": 3,
+      "value": 25.3,
+      "id": 3
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-08",
+      "timestamp": 1662595200000,
+      "chamber": "#4",
+      "sortChamber": 4,
+      "value": 64.3,
+      "id": 4
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-08",
+      "timestamp": 1662595200000,
+      "chamber": "#5",
+      "sortChamber": 5,
+      "value": 27.3,
+      "id": 5
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-08",
+      "timestamp": 1662595200000,
+      "chamber": "#6",
+      "sortChamber": 6,
+      "value": 74.2,
+      "id": 6
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-07",
+      "timestamp": 1662508800000,
+      "chamber": "#1",
+      "sortChamber": 1,
+      "value": 53.2,
+      "id": 7
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-07",
+      "timestamp": 1662508800000,
+      "chamber": "#2",
+      "sortChamber": 2,
+      "value": 78,
+      "id": 8
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-07",
+      "timestamp": 1662508800000,
+      "chamber": "#3",
+      "sortChamber": 3,
+      "value": 78,
+      "id": 9
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-07",
+      "timestamp": 1662508800000,
+      "chamber": "#5",
+      "sortChamber": 5,
+      "value": 62.9,
+      "id": 10
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-06",
+      "timestamp": 1662422400000,
+      "chamber": "#7",
+      "sortChamber": 7,
+      "value": 17,
+      "id": 11
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-06",
+      "timestamp": 1662422400000,
+      "chamber": "#8",
+      "sortChamber": 8,
+      "value": 91,
+      "id": 12
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-06",
+      "timestamp": 1662422400000,
+      "chamber": "#9",
+      "sortChamber": 9,
+      "value": 24.7,
+      "id": 13
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-06",
+      "timestamp": 1662422400000,
+      "chamber": "#10",
+      "sortChamber": 10,
+      "value": 83.2,
+      "id": 14
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-06",
+      "timestamp": 1662422400000,
+      "chamber": "#11",
+      "sortChamber": 11,
+      "value": 38.4,
+      "id": 15
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-06",
+      "timestamp": 1662422400000,
+      "chamber": "#12",
+      "sortChamber": 12,
+      "value": 121,
+      "id": 16
+    },
+    {
+      "tool": "Please select tool name",
+      "chartName": "Please select chart name",
+      "date": "2022-09-19",
+      "timestamp": 1663545600000,
+      "chamber": "#1",
+      "sortChamber": 1,
+      "value": 0,
+      "id": 17
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "date": "2022-09-19",
+      "timestamp": 1663545600000,
+      "chamber": "#1",
+      "sortChamber": 1,
+      "value": 0,
+      "id": 18
+    },
+    {
+      "tool": "Tool1",
+      "chartName": "Chart2",
+      "date": "2023-01-30",
+      "timestamp": 1675036800000,
+      "chamber": "#1",
+      "sortChamber": 1,
+      "value": 10,
+      "id": 19
+    }
+  ],
+  "chartAttributes": [
+    {
+      "tool": "Tool1",
+      "chartName": "Chart1",
+      "yAxialTitle": "yTitle",
+      "maxSpec": 100,
+      "minSpec": 0,
+      "target": 50,
+      "max": 100,
+      "min": 0,
+      "id": 1
+    }
+  ]
+}
